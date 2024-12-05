@@ -5,18 +5,6 @@ answer = 0
 distance_list_1 = []
 distance_list_2 = []
 
-def convert_to_list(num_1, num_2):
-    num_1_list = []
-    num_2_list = []
-    for num in num_1:
-        num_1_list.append(int(num))
-    for num in num_2:
-        num_2_list.append(int(num))
-    num_1_list.sort()
-    num_2_list.sort()
-    return num_1_list, num_2_list
-
-
 def find_distances(list_1, list_2):
     i = 0
     score = 0
@@ -35,7 +23,12 @@ for pair in lines:
     distance_list_1.sort()
     distance_list_2.sort()
 
-    answer = find_distances(distance_list_1, distance_list_2)
+for num in distance_list_1:
+    count = 0
+    for digit in distance_list_2:
+        if num == digit:
+            count += 1
+    answer += num * count
 
 print(answer)
 
