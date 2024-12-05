@@ -1,6 +1,10 @@
 with open('input.txt', 'r') as file:
     lines = [line.rstrip('\n') for line in file.readlines()]
 
+answer = 0
+distance_list_1 = []
+distance_list_2 = []
+
 def convert_to_list(num_1, num_2):
     num_1_list = []
     num_2_list = []
@@ -14,31 +18,24 @@ def convert_to_list(num_1, num_2):
 
 
 def find_distances(list_1, list_2):
-    distance_list = []
     i = 0
-    for num in list_1:
-        if num > list_2[i]:
-            distance = num - list_2[i]
-            i += 1
-            distance_list.append(distance)
-        else:
-            distance = list_2[i] - num
-            i += 1
-            distance_list.append(distance)
-    return distance_list
+    score = 0
+    for _ in range(len(list_1)):
+        score += abs(list_2[i] - list_1[i])
+        i += 1
+    return score
 
-
-answer = 0
-total_distance = []
 
 for pair in lines:
     thing_one, thing_two = pair.split()
-    thing_1, thing_2 = convert_to_list(thing_one, thing_two)
+    # thing_1, thing_2 = convert_to_list(thing_one, thing_two)
+    distance_list_1.append(int(thing_one))
+    distance_list_2.append(int(thing_two))
 
-    all_5_distances = find_distances(thing_1, thing_2)
+    distance_list_1.sort()
+    distance_list_2.sort()
 
-    list_total = sum(all_5_distances)
-    answer += list_total
+    answer = find_distances(distance_list_1, distance_list_2)
 
 print(answer)
 
