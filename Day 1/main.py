@@ -16,6 +16,8 @@ def convert_to_list(num_1, num_2):
 def find_distances(list_1, list_2):
     distance_list = []
     i = 0
+    print(list_1)
+    print(list_2)
     for num in list_1:
         if num > list_2[i]:
             distance = num - list_2[i]
@@ -25,6 +27,7 @@ def find_distances(list_1, list_2):
             distance = list_2[i] - num
             i += 1
             distance_list.append(distance)
+    print(distance_list)
     return distance_list
 
 
@@ -36,8 +39,10 @@ for pair in lines:
     thing_1, thing_2 = convert_to_list(thing_one, thing_two)
 
     all_5_distances = find_distances(thing_1, thing_2)
+
     list_total = sum(all_5_distances)
     answer += list_total
+    print(answer)
 
 print(answer)
 
