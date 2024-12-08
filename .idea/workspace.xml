@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9675f38b-b53b-4f56-88ae-2edee0b9b9c1" name="Changes" comment="Day 1 Part 1">
+    <list default="true" id="9675f38b-b53b-4f56-88ae-2edee0b9b9c1" name="Changes" comment="Day 1 Part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,12 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1733421027920</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Day 1 Part 2">
+      <option name="closed" value="true" />
+      <created>1733423760298</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733423760298</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day 1 Part 1 - stuck" />
     <MESSAGE value="Day 1 Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 1 Part 1" />
+    <MESSAGE value="Day 1 Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 1 Part 2" />
   </component>
 </project>
