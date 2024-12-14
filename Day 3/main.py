@@ -15,6 +15,7 @@ for string in master_list:
 
 for example in find_all_examples:
     numbers = re.findall('\d{1,3},\d{1,3}', example)
+    print(numbers)
 
     num_1 = numbers[0]
     num_2 = numbers[1]
