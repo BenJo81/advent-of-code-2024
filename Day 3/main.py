@@ -16,11 +16,9 @@ for string in master_list:
     master_list_2.append(find_all_examples)
 
 for example in master_list_2:
-    print(example)
     i = 0
     while i < len(example):
         numbers = re.findall('\d{1,3},\d{1,3}', example[i])
-        print(numbers)
         num_1, num_2 = numbers[0].split(",")
         value = int(num_1) * int(num_2)
         total += value
